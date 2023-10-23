@@ -97,7 +97,7 @@ function flipCard(card, index) {
 function unliked(card) {
     clickAudio.play()
     const index = card.id;
-    document.cookie = index + "=;max-age=0;path=/;";
+    document.cookie = index + "=;max-age=0;";
     card.parentElement.removeChild(card);
 
 }
